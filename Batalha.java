@@ -26,18 +26,21 @@ public class Batalha {
                     Pokemon.desenhovitoriapokemon();
                     break;
                 } else {
-                    System.out.println("\n" + pokemon.getNome() + " atacou Meowth com ataque rápido! E deu " + ataque + " de dano, " + "Meowth ficou com " + meowth.getVida() + " de vida");
+                    System.out.println("\n" + pokemon.getNome() + " atacou Meowth com ataque rápido! E deu 
+                                       " + ataque + " de dano, " + "Meowth ficou com " + meowth.getVida() + " de vida");
                 }
                 ataque = meowth.ataque();
                 pokemon.setVida(pokemon.danotomado(ataque));
                 Thread.sleep(1000);
-                System.out.println("\nMeowth atacou " + pokemon.getNome() + " e deu " + ataque + " de dano, " + pokemon.getNome() + " ficou com " + pokemon.getVida() + " de vida\n");
+                System.out.println("\nMeowth atacou " + pokemon.getNome() + " e deu " + ataque + 
+                                   " de dano, " + pokemon.getNome() + " ficou com " + pokemon.getVida() + " de vida\n");
             } else if (ataqueescolhido == 2) {
                 int ataqueespecifico = pokemon.ataqueespecifico();
                 meowth.danotomadoespecifico(ataqueespecifico);
                 Thread.sleep(1000);
                 if (meowth.getVida() <= 0) {
-                    System.out.println("\n" + pokemon.getNome() + " atacou Meowth com " + ataqueespecificonome + "! E deu " + ataqueespecifico + " de dano, " + "Meowth morreu.\n");
+                    System.out.println("\n" + pokemon.getNome() + " atacou Meowth com 
+                                       " + ataqueespecificonome + "! E deu " + ataqueespecifico + " de dano, " + "Meowth morreu.\n");
                     System.out.println("Parabéns! Você derrotou a equipe Rocket.");
                     Thread.sleep(1000);
                     System.out.println("Obrigado por salvar os Pokemon.\n");
@@ -46,12 +49,14 @@ public class Batalha {
                     break;
                 }
                     else {
-                    System.out.println("\n" + pokemon.getNome() + " atacou Meowth com " + ataqueespecificonome + "! E deu " + ataqueespecifico + " de dano, " + "Meowth ficou com " + meowth.getVida()+ " de vida");
+                    System.out.println("\n" + pokemon.getNome() + " atacou Meowth com " + ataqueespecificonome + 
+                                       "! E deu " + ataqueespecifico + " de dano, " + "Meowth ficou com " + meowth.getVida()+ " de vida");
                 }
                 ataqueespecifico = meowth.ataque();
                 pokemon.setVida(pokemon.danotomado(ataqueespecifico));
                 Thread.sleep(1000);
-                System.out.println("\nMeowth atacou " + pokemon.getNome() + " e deu " + ataqueespecifico + " de dano, " + pokemon.getNome() + " ficou com " + pokemon.getVida() + " de vida\n");
+                System.out.println("\nMeowth atacou " + pokemon.getNome() + " e deu " + ataqueespecifico + 
+                                   " de dano, " + pokemon.getNome() + " ficou com " + pokemon.getVida() + " de vida\n");
             }
             else if (ataqueescolhido == 3){
                     Random random = new Random();
